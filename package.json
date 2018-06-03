@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "hook": "> ./.git/hooks/`ls ./.git/hooks | grep pre-commit` && mv ./.git/hooks/`ls ./.git/hooks| grep pre-commit` ./.git/hooks/pre-commit  && cat ./src/hooks/pre-commit >> ./.git/hooks/pre-commit"
   },
   "private": true,
   "dependencies": {
